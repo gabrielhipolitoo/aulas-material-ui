@@ -1,6 +1,5 @@
-import React from "react";
-
-export const  App = () => {
+import {BrowserRouter} from 'react-router-dom'
+export const App = () => {
   return <></>;
 }
 
