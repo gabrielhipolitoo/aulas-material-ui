@@ -1,10 +1,15 @@
+import { Button } from "@mui/material";
 import { createBrowserRouter, Navigate } from "react-router-dom";
 
 export {};
 export const router = createBrowserRouter([
   {
     path: "/pagina-inicial",
-    element: <p>Pagina teste</p>,
+    element: (
+      <Button variant="contained"  color="primary">
+        Submit
+      </Button>
+    ),
   },
   {
     path: "*",
