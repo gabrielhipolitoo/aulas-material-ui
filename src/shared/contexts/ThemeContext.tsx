@@ -36,10 +36,9 @@ export const AppThemeProvider: React.FC<IContext> = ({ children }) => {
     if (themeName === "light") return LightLheme;
     return DarkTheme;
   }, [themeName]);
-  console.log(theme)
   return (
     <ThemeContext.Provider value={{ themeName, toggleTheme }}>
-      <ThemeProvider theme={LightLheme}>
+      <ThemeProvider theme={theme}>
         <Box
           width="100w"
           height="100vh"
